@@ -44,6 +44,54 @@
             <li th:each="err : ${#fields.errors('email')}" th:text="${err}"style="color: red;"></li>
           </ul>
         </div>
+        <div class="form-group">
+          <label for="time1">電話可能時間第一希望</label>
+          <select id="time1" name="time1" class="form-control" >
+            <option value="9時から10時" text="9時から10時">9時から10時</option>
+            <option value="10時から11時" text="10時から11時">10時から11時</option>
+            <option value="11時から12時" text="11時から12時">11時から12時</option>
+            <option value="12時から13時" text="12時から13時">12時から13時</option>
+            <option value="13時から14時" text="13時から14時">13時から14時</option>
+            <option value="14時から15時" text="14時から15時">14時から15時</option>
+            <option value="15時から16時" text="15時から16時">15時から16時</option>
+            <option value="16時から17時" text="16時から17時">16時から17時</option>
+          </select>
+          <ul th:if="${#fields.hasErrors('time1')}">
+            <li th:each="err : ${#fields.errors('time1')}" th:text="${err}"style="color: red;"></li>
+          </ul>
+        </div>
+        <div class="form-group">
+          <label for="time2">電話可能時間第二希望</label>
+          <select id="time2" name="time2" class="form-control" >
+            <option value="9時から10時" text="9時から10時">9時から10時</option>
+            <option value="10時から11時" text="10時から11時">10時から11時</option>
+            <option value="11時から12時" text="11時から12時">11時から12時</option>
+            <option value="12時から13時" text="12時から13時">12時から13時</option>
+            <option value="13時から14時" text="13時から14時">13時から14時</option>
+            <option value="14時から15時" text="14時から15時">14時から15時</option>
+            <option value="15時から16時" text="15時から16時">15時から16時</option>
+            <option value="16時から17時" text="16時から17時">16時から17時</option>
+          </select>
+          <ul th:if="${#fields.hasErrors('time2')}">
+            <li th:each="err : ${#fields.errors('time2')}" th:text="${err}"style="color: red;"></li>
+          </ul>
+        </div>
+        <div class="form-group">
+          <label for="time3">電話可能時間第三希望</label>
+          <select id="time3" name="time3" class="form-control" >
+            <option value="9時から10時" text="9時から10時">9時から10時</option>
+            <option value="10時から11時" text="10時から11時">10時から11時</option>
+            <option value="11時から12時" text="11時から12時">11時から12時</option>
+            <option value="12時から13時" text="12時から13時">12時から13時</option>
+            <option value="13時から14時" text="13時から14時">13時から14時</option>
+            <option value="14時から15時" text="14時から15時">14時から15時</option>
+            <option value="15時から16時" text="15時から16時">15時から16時</option>
+            <option value="16時から17時" text="16時から17時">16時から17時</option>
+          </select>
+          <ul th:if="${#fields.hasErrors('time3')}">
+            <li th:each="err : ${#fields.errors('time3')}" th:text="${err}"style="color: red;"></li>
+          </ul>
+        </div>
         <div class="sub-title">集荷元・お届け先</div>
         <div class="form-group">
           <label for="oldPrefectureId">集荷元住所（都道府県）</label>
@@ -121,6 +169,16 @@
             <option value="3,4月" text="3,4月">3,4月</option>
             <option value="9月" text="9月">9月</option>
             <option value="その他" text="その他">その他</option>
+          </select>
+        </div>
+      </fieldset>
+      <fieldset>
+        <div class="sub-title">本見積り希望</div>
+        <div class="form-group">
+          <label for="box">本見積り希望有無</label>
+          <select id="wish" name="wish" class="form-control" >
+            <option value="希望しない" text="希望しない">希望しない</option>
+            <option value="希望する" text="希望する">希望する</option>
           </select>
         </div>
       </fieldset>

@@ -26,7 +26,16 @@ public class UserOrderDto {
 
     private boolean washingMachineInstallation;
 
+    private String time1;
+
+    private String time2;
+
+    private String time3;
+
     private String month;
+
+    private String wish;
+
     public String getCustomerName() {
         return customerName;
     }
@@ -130,4 +139,37 @@ public class UserOrderDto {
     public void setMonth(String month) {
         this.month = month;
     }
+
+    public String getTime1() {
+        return time1;
+    }
+
+    public void setTime1(String time1) {
+        this.time1 = time1;
+    }
+
+    public String getTime2() {
+        return time2;
+    }
+
+    public void setTime2(String time2) {
+        this.time2 = time2;
+    }
+
+    public String getTime3() {
+        return time3;
+    }
+
+    public void setTime3(String time3) {
+        this.time3 = time3;
+    }
+
+    public String getWish() {
+        return wish;
+    }
+
+    public void setWish(String wish) {
+        this.wish = wish;
+    }
+
 }

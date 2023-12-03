@@ -51,6 +51,21 @@
           <td><span th:text="*{email}"></span></td>
           <input type="hidden" name="email" id="email" th:value="*{email}"/>
         </tr>
+        <tr>
+          <th>電話可能時間第一希望</th>
+          <td><span th:text="*{time1}"></span></td>
+          <input type="hidden" name="time1" id="time1" th:value="*{time1}"/>
+        </tr>
+        <tr>
+          <th>電話可能時間第二希望</th>
+          <td><span th:text="*{time2}"></span></td>
+          <input type="hidden" name="time2" id="time2" th:value="*{time2}"/>
+        </tr>
+        <tr>
+          <th>電話可能時間第三希望</th>
+          <td><span th:text="*{time3}"></span></td>
+          <input type="hidden" name="time3" id="time3" th:value="*{time3}"/>
+        </tr>
       </tbody>
       </table>
     </div>
@@ -132,6 +147,20 @@
             <td><span th:text="*{month} "></span></td>
             <input type="hidden" name="month" id="month" th:value="*{month}"/>
           </tr>
+        </tbody>
+        </table>
+      </div>
+      <div class="col-sm-12">
+        <div class="sub-title">本見積り希望</div>
+        <table class="table table-bordered">
+        <col span="1" style="background-color: #FFFFFF;">
+        <col span="2" style="background-color: #FFFFFF;">
+      <tbody>
+        <tr>
+          <th style="width: 40%">本見積り希望有無</th>
+          <td><span th:text="*{wish}"></span></td>
+          <input type="hidden" name="wish" id="wish" th:value="*{wish}"/>
+        </tr>
         </tbody>
         </table>
       </div>
