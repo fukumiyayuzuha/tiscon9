@@ -147,4 +147,18 @@ public class EstimateDao {
         SqlParameterSource paramSource = new MapSqlParameterSource("serviceId", serviceId);
         return parameterJdbcTemplate.queryForObject(sql, paramSource, Integer.class);
     }
+
+    /**
+     * 引っ越し予定月を取得する。
+     *
+     * @param packageId 荷物ID
+     * @return 段ボール数
+     
+    public int getBoxPerPackage(int packageId) {
+        String sql = "SELECT BOX FROM PACKAGE_BOX WHERE PACKAGE_ID = :packageId";
+
+        SqlParameterSource paramSource = new MapSqlParameterSource("packageId", packageId);
+        return parameterJdbcTemplate.queryForObject(sql, paramSource, Integer.class);
+    }
+    */
 }
