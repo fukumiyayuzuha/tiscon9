@@ -71,6 +71,7 @@ public class EstimateService {
      */
     public Integer getPrice(UserOrderDto dto) {
         double distance = estimateDAO.getDistance(dto.getOldPrefectureId(), dto.getNewPrefectureId());
+        //double distance = getDistance(dto.getOldpost());
         // 小数点以下を切り捨てる
         int distanceInt = (int) Math.floor(distance);
 
@@ -103,6 +104,13 @@ public class EstimateService {
             monthvariables=1;
         }
         return (int)((priceForDistance + pricePerTruck)*monthvariables + priceForOptionalService);
+    }
+
+    /**
+     * TODO:郵便番号を用いて、Heartrailsの最寄り駅情報取得APIで緯度経度を受け取り、二点間の距離を求める
+     */
+    private double getDistance(String post) {
+        return 0;
     }
 
     /**
