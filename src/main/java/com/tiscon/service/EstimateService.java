@@ -71,6 +71,7 @@ public class EstimateService {
      */
     public Integer getPrice(UserOrderDto dto) {
         double distance = estimateDAO.getDistance(dto.getOldPrefectureId(), dto.getNewPrefectureId());
+        //double distance = getDistance(dto.getOldpost());
         // 小数点以下を切り捨てる
         int distanceInt = (int) Math.floor(distance);
 
@@ -103,6 +104,10 @@ public class EstimateService {
             monthvariables=1;
         }
         return (int)((priceForDistance + pricePerTruck)*monthvariables + priceForOptionalService);
+    }
+
+    private double getDistance(String post) {
+        return 0;
     }
 
     /**

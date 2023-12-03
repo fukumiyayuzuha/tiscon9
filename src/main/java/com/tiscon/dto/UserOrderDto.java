@@ -8,6 +8,10 @@ public class UserOrderDto {
 
     private String email;
 
+    private String oldpost;
+
+    private String newpost;
+
     private String oldPrefectureId;
 
     private String oldAddress;
@@ -49,6 +53,22 @@ public class UserOrderDto {
 
     public void setEmail(String email) {
         this.email = email;
+    }
+
+    public String getOldpost() {
+        return oldpost;
+    }
+
+    public void setOldpost(String oldpost) {
+        this.oldpost = oldpost;
+    }
+
+    public String getNewpost() {
+        return newpost;
+    }
+
+    public void setNewpost(String newpost) {
+        this.newpost = newpost;
     }
 
     public String getOldPrefectureId() {

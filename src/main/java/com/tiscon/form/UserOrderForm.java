@@ -25,6 +25,15 @@ public class UserOrderForm {
     private String email;
 
     @NotBlank
+    @Numeric
+    private String oldpost;
+
+    @NotBlank
+    @Numeric
+    private String newpost;
+
+
+    @NotBlank
     private String oldPrefectureId;
 
     @NotBlank
@@ -80,6 +89,23 @@ public class UserOrderForm {
 
     public void setEmail(String email) {
         this.email = email;
+    }
+
+
+    public String getOldpost() {
+        return oldpost;
+    }
+
+    public void setOldpost(String oldpost) {
+        this.oldpost = oldpost;
+    }
+
+    public String getNewpost() {
+        return newpost;
+    }
+
+    public void setNewpost(String newpost) {
+        this.newpost = newpost;
     }
 
     public String getOldPrefectureId() {
