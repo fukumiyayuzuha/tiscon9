@@ -77,10 +77,10 @@ body {
     justify-content: center;
     align-items: center;
     margin: 32px;
-    color: #313131;
+    color: #217f8d;
     font-style: normal;
     font-weight: bold;
-    font-size: 24px;
+    font-size: 40px;
     line-height: 28px;
     font-family: "Roboto";
 }
@@ -105,9 +105,9 @@ body {
     font-family: "Roboto";
     font-style: normal;
     font-weight: bold;
-    font-size: 24px;
+    font-size: 28px;
     line-height: 28px;
-    outline: 0.5rem solid #313131;
+    outline: 0.5rem solid #217f8d;
     outline-offset: 0.5rem;
     outline-width: 5px;
 }
