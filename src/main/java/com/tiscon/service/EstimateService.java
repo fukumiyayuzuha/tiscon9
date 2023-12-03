@@ -93,10 +93,10 @@ public class EstimateService {
         }
 
         double monthvariables;
-        if (dto.getMonth()=="3or4"){
+        if (dto.getMonth().equals("3,4月")){
             monthvariables=1.5;
         }
-        else if(dto.getMonth()=="9"){
+        else if(dto.getMonth().equals("9月")){
             monthvariables=1.2;
         }
         else{
